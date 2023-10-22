@@ -26,7 +26,6 @@ setInterval(function () {
     Math.floor(((time / 3600 + 11) % 12) + 1) * 30
     }deg)`;
 
-    // Numeric Clock
     document.querySelector(".hours").innerText = addZero(Math.floor(time / 3600));
     document.querySelector(".mnts").innerText = addZero(
     Math.floor((time % 3600) / 60)
