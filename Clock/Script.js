@@ -22,6 +22,7 @@ setInterval(function () {
     document.getElementById("minutes").style.transform = `rotate(${Math.floor(
     ((time % 3600) / 60) * 6
     )}deg)`;
+    
     document.getElementById("hour").style.transform = `rotate(${
     Math.floor(((time / 3600 + 11) % 12) + 1) * 30
     }deg)`;
