@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Sports News Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--first Navbar-->
+    <div class="firstNav">
+        <h2>Live Scores</h2>
+        <div class="listheader1">
+            <ul>
+                <li>SJC Ninjas - 314</li>
+                <li>NS Pirates - 159</li>
+            </ul>
+            <ul>
+                <li>CHI Samural - 0</li>
+                <li>TUL Wizards - 0</li>
+            </ul>
+            <ul>
+                <li>BOS Hackers - 13</li>
+                <li>TYO Youkai - 37</li>
+            </ul>
+            <ul>
+                <li>BOI Knights- 5</li>
+                <li>SEA Sea Lions - 11</li>
+            </ul>
+        </div> 
+    </div>
+<!--Second Navbar-->
+    <div class="secondNav">
+        <div class="listheader2">
+            <h1>DSNN</h1>
+            <ul id="sports">
+                <li>Football</li>
+                <li>Basketball</li>
+                <li>Baseball</li>
+                <li>Soccer</li>
+                <li>More...</li>
+            </ul>
+        </div>
+        <div id="parameters">
+            <img src="assets/search-light.png" alt="Search">
+            <img src="assets/hamburger-light.png" alt="parameter">
+            <img src="assets/user-circle-light.png" alt="user picture">
+        </div>
+    </div>
+<!--main container-->
+    <div class="main">
+<!--left containers-->
+        <div class="leftcontainer">
+<!--first container in the left-->
+            <div class="firstcontainer">
+                <h3>Top Stories</h3>
+                <hr>
+                <p>Ninjas up big in 5th</p>
+                <p>Best sports cities</p>
+                <p>Choi joins Hall of Fame</p>
+                <p>Tournament underway</p>
+                <p>Samurai at Wizards...</p>
+        </div>
+<!--second container in the left-->
+            <div class="secondcontainer">
+                <h4>Customise your DSNN</h4>
+                <button id="btn1">Sign In</button>
+                <button id="btn2">Sign Up</button>
+            </div>
+<!--third container in the left-->
+            <div class="thirdcontainer">
+                <h4>Never miss a play</h4>
+                <button id="subscribe"  onclick="hide(this)" >Subscribe</button>
+            </div>
+        </div>
+<!--right container-->
+        <div class="rightcontainer">
+            <div class="live">
+                <ul>
+                    <li>Live</li>
+                </ul>
+                <h2>Ninjas Leaing Pirates</h2>
+            </div>
+<!--body of the right vontainer-->
+            <div class="maincont">
+<!--Ninja players-->
+                <div class="players1">
+                    <img id="logoplayers" src="assets/sjc-ninjas.png" alt="Ninjas image">
+                    <p id="adress">San Jose</p>
+                    <h2>Ninjas</h2>
+                    <p id="code">(10 W - 3 L)</p>
+                    <h1 id="score1" onclick="add1(0)">314</h1>
+                </div>
+<!--versus container-->
+                <div class="versus">
+                    <h2>VS</h2>
+                    <div id="code">
+                        <p>0:13 repaining</p>
+                        <p>5th period</p>
+                    </div>
+                </div>
+<!--pirates players-->
+                <div class="players2">
+                    <img id="logoplayers" src="assets/ns-pirates.png" alt="Pirates image">
+                    <p id="adress">Nova Scotia</p>
+                    <h2>Pirates</h2>
+                    <p id="code">(12 W - 2 L)</p>
+                    <h1 id="score2" onclick="add1(1)" >159</h1>
+                </div>
+            </div>
+            <p id="description">A conservative match between the tow top-performing 
+            sides in the Central Leage Division with a number 1 
+            seed at stake...<a href="#">get live updates</a></p>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
